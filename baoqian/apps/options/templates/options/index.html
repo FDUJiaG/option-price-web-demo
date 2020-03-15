@@ -1,0 +1,71 @@
+{% extends "options/layout.html" %}
+{% block content %}
+{% load i18n %}
+
+<title>{% block title %}{% trans 'Industrial Futures Option Prices System' %}{% endblock %}</title>
+
+<div class="container page-header">
+    <h1>
+        {% trans 'Futures Option Prices System' %}
+        <!--<small>{% trans 'Parity Option' %}</small>-->
+    </h1>
+</div>
+
+<div class="container page-body">
+    <div class="col-md-10" role="main">
+        <h2>{% trans 'Parity Option List' %}</h2>
+        <div class="body-main">
+            <table class="table table-hover">
+                <tr>
+                    <th>{% trans 'Variety' %}</th>
+                    <th style="text-align:center">{% trans 'Subject' %}</th>
+                    <th style="text-align:center">{% trans 'Subject Price' %}</th>
+                    <th style="text-align:center">{% trans 'Buy Vol' %}</th>
+                    <th style="text-align:center">{% trans 'Sell Vol' %}</th>
+                    <th style="text-align:center">{% trans 'Buy Price' %}</th>
+                    <th style="text-align:center">{% trans 'Sell Price' %}</th>
+                    <th style="text-align:center">{% trans 'Buy %' %}</th>
+                    <th style="text-align:center">{% trans 'Sell %' %}</th>
+                </tr>
+                {% for option_item in option_list %}
+                <tr>
+                    <td>
+                        {{ option_item.0 }}
+                    </td>
+                    <td style="text-align:center"><a href="/options/#">
+                        {{ option_item.1 }}
+                    </a></td>
+                    <td style="text-align:right;padding-right:3.5%">{{ option_item.2 }}</td>
+                    <td style="text-align:right;padding-right:2.5%">{{ option_item.3 }}</td>
+                    <td style="text-align:right;padding-right:2.5%">{{ option_item.4 }}</td>
+                    <td style="text-align:right;padding-right:2.5%">{{ option_item.5 }}</td>
+                    <td style="text-align:right;padding-right:2.5%">{{ option_item.6 }}</td>
+                    <td style="text-align:right;padding-right:2.5%">{{ option_item.7 }}</td>
+                    <td style="text-align:right;padding-right:2.5%">{{ option_item.8 }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+
+        </div>
+
+    </div>
+    <div class="col-md-2" role="complementary">
+        <div>
+            <h4>{% trans 'Related links' %}</h4>
+            <p><a href="http://www.ine.cn/">
+                <span class="glyphicon glyphicon-oil"></span> {% trans 'INE' %}
+            </a></p>
+            <p><a href="http://www.shfe.com.cn/">
+                <span class="glyphicon glyphicon-book"></span> {% trans 'SHFE' %}
+            </a></p>
+            <p><a href="http://www.dce.com.cn/">
+                <span class="glyphicon glyphicon-grain"></span> {% trans 'DCE' %}
+            </a></p>
+            <p><a href="http://www.czce.com.cn/">
+                <span class="glyphicon glyphicon-apple"></span> {% trans 'CSCE' %}
+            </a></p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

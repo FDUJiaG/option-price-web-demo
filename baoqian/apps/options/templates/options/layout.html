@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+
+{% block body %}
+{% load i18n %}
+<!-- Fixed navbar -->
+
+<nav class="navbar navbar-default navbar-inner navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header" style="margin-right: 1%">
+            <a class="navbar-brand" style="padding-top:9px" href="https://www.cifutures.com.cn/">
+                <img alt="Brand" src="https://www.cifutures.com.cn/images/qhlogo.png"
+                     height="31">
+            </a>
+            <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
+                <span class='sr-only'> Swift the Nav-Bar </span>
+                <span class='icon-bar'></span>
+                <span class='icon-bar'></span>
+                <span class='icon-bar'></span>
+            </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+
+        <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="nav navbar-nav">
+                <li><a class="navbar-brand" href="/options">
+                    <span class="glyphicon glyphicon-home"></span> {% trans 'Homepage' %}
+                    <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-left" role="search" method="get" id="searchform" action="/options/search">
+                <div class="input-group">
+                    <input type="search" name="q" class="form-control" placeholder="{% trans 'Search for Variety' %}"
+                           value="{{ q_name }}">
+                    <span class="input-group-btn">
+                            <button type="submit" class="btn btn-default" type="button">
+                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+                        </span>
+                </div>
+
+            </form>
+
+            <ul class="nav navbar-nav navbar-right">
+                <form class="navbar-form navbar-left" role="search" method="get" id="dateform" action="/options">
+                    <div class="input-group">
+                        <input type="date" class="form-control" value="2020-04-07" min="2020-03-10" max="2020-06-03"/>
+                        <span class="input-group-btn">
+                            <button type="submit" class="btn btn-default" type="button">
+                                <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">
+                        <span class="glyphicon glyphicon-user"></span> {{ user.username }}
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">
+                            <span class="glyphicon glyphicon-info-sign"></span>&nbsp; {% trans 'User Info' %}
+                        </a></li>
+                        <li><a href="/admin/password_change/">
+                            <span class="glyphicon glyphicon-edit"></span>&nbsp; {% trans 'Change Password' %}
+                        </a></li>
+                        <li><a href="/admin/">
+                            <span class="glyphicon glyphicon-king"></span>&nbsp;{% trans 'Management' %}
+                        </a></li>
+                        <li role="separator" class="divider hidden-xs"></li>
+                        <li><a href="/logout">
+                            <span class="glyphicon glyphicon-log-out"></span>&nbsp; {% trans 'Logout' %}
+                        </a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+{% block content %}{% endblock %}
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script src="/static/assets/js/vendor/jquery.min.js"></script>
+<script src="/static/dist/js/bootstrap.min.js"></script>
+<script src="/static/assets/js/docs.min.js"></script>
+
+<style type="text/css">
+    body{
+        margin-top: 5%;
+    }
+</style>
+<style>
+    .col-md-2-5{
+        float: left;
+        margin-left:4%;
+        width:20%
+    }
+</style>
+
+{% endblock %}

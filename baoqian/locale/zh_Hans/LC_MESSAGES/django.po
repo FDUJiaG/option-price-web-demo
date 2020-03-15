@@ -1,0 +1,140 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-15 14:46+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: apps/options/templates/options/404.html:7
+msgid "The page you&apos;re"
+msgstr "您访问的"
+
+#: apps/options/templates/options/404.html:8
+msgid "looking for can&apos;t be"
+msgstr "页面暂时无法"
+
+#: apps/options/templates/options/404.html:9
+msgid "found."
+msgstr "找到！"
+
+#: apps/options/templates/options/500.html:7
+msgid "Internal Server Error"
+msgstr "内部服务错误！"
+
+#: apps/options/templates/options/500.html:8
+msgid "More information may be available"
+msgstr "更多详细信息请参阅"
+
+#: apps/options/templates/options/500.html:9
+msgid "in the server error log."
+msgstr "错误服务日志。"
+
+#: apps/options/templates/options/index.html:5
+msgid "Industrial Futures Option Prices System"
+msgstr "兴业期货期权报价系统"
+
+#: apps/options/templates/options/index.html:9
+msgid "Futures Option Prices System"
+msgstr "商品期权报价系统"
+
+#: apps/options/templates/options/index.html:10
+msgid "Parity Option"
+msgstr "平价期权"
+
+#: apps/options/templates/options/index.html:16
+msgid "Parity Option List"
+msgstr "平价期权列表"
+
+#: apps/options/templates/options/index.html:20
+msgid "Variety"
+msgstr "品种"
+
+#: apps/options/templates/options/index.html:21
+msgid "Subject"
+msgstr "标的"
+
+#: apps/options/templates/options/index.html:22
+msgid "Subject Price"
+msgstr "标的价格"
+
+#: apps/options/templates/options/index.html:23
+msgid "Buy Vol"
+msgstr "买价 Vol"
+
+#: apps/options/templates/options/index.html:24
+msgid "Sell Vol"
+msgstr "卖价 Vol"
+
+#: apps/options/templates/options/index.html:25
+msgid "Buy Price"
+msgstr "买价"
+
+#: apps/options/templates/options/index.html:26
+msgid "Sell Price"
+msgstr "卖价"
+
+#: apps/options/templates/options/index.html:27
+#, python-format
+msgid "Buy %%"
+msgstr "买价 %%"
+
+#: apps/options/templates/options/index.html:28
+#, python-format
+msgid "Sell %%"
+msgstr "卖价 %%"
+
+#: apps/options/templates/options/index.html:54
+msgid "Related links"
+msgstr "相关链接"
+
+#: apps/options/templates/options/index.html:56
+msgid "INE"
+msgstr "上海国际能源交易中心"
+
+#: apps/options/templates/options/index.html:59
+msgid "SHFE"
+msgstr "上海期货交易所"
+
+#: apps/options/templates/options/index.html:62
+msgid "DCE"
+msgstr "大连商品交易所"
+
+#: apps/options/templates/options/index.html:65
+msgid "CSCE"
+msgstr "郑州商品交易所"
+
+#: apps/options/templates/options/layout.html:28
+msgid "Homepage"
+msgstr "主页"
+
+#: apps/options/templates/options/layout.html:34
+msgid "Search for Variety"
+msgstr "寻找品种"
+
+#: apps/options/templates/options/layout.html:64
+msgid "User Info"
+msgstr "用户信息"
+
+#: apps/options/templates/options/layout.html:67
+msgid "Change Password"
+msgstr "修改密码"
+
+#: apps/options/templates/options/layout.html:70
+msgid "Management"
+msgstr "用户管理"
+
+#: apps/options/templates/options/layout.html:74
+msgid "Logout"
+msgstr "登出"

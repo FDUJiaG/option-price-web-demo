@@ -1,0 +1,31 @@
+{% extends "license/layout.html" %}
+
+{% block content %}
+{% load i18n %}
+
+<div class="pageTitle">
+    <h1 class="pageTitle-heading">{% trans 'The page you&apos;re' %}</h1>
+    <h1 class="pageTitle-heading">{% trans 'looking for can&apos;t be' %}</h1>
+    <h1 class="pageTitle-heading">{% trans 'found.' %}</h1>
+
+</div>
+
+<style>
+    div.pageTitle{
+        text-align:center;
+        margin-top:200px
+    }
+
+    h1.pageTitle-heading{
+        font-size:40px;
+        margin-top:5px;
+        margin-bottom:5px;
+    }
+    body {
+        background: white url("/static/assets/img/devices.png") no-repeat center;
+        margin: 225px
+    }
+
+</style>
+
+{% endblock %}

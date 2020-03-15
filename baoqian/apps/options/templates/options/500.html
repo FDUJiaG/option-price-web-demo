@@ -1,0 +1,35 @@
+{% extends "license/layout.html" %}
+
+{% block content %}
+{% load i18n %}
+
+<div class="pageTitle">
+    <h1 class="pageTitle-heading">{% trans 'Internal Server Error' %}</h1>
+    <h3 class="pageTitle-3">{% trans 'More information may be available' %}</h3>
+    <h3 class="pageTitle-3">{% trans 'in the server error log.' %}</h3>
+
+</div>
+
+<style>
+    div.pageTitle{
+        text-align:center;
+        margin-top:200px
+    }
+
+    h1.pageTitle-heading{
+        font-size:40px;
+        margin-top:5px;
+        margin-bottom:5px;
+    }
+    h3.pageTitle-3{
+        margin-top:5px;
+        margin-bottom:5px;
+    }
+    body {
+        background: white url("/static/assets/img/devices.png") no-repeat center;
+        margin: 225px
+    }
+
+</style>
+
+{% endblock %}
