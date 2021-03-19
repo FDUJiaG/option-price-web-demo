@@ -2,6 +2,6 @@ tushare
 requests
 numpy
 scipy
-django==2.2.13
+django==2.2.18
 django-filter
 sqlalchemy
